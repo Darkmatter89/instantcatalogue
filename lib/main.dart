@@ -43,7 +43,8 @@ class _HomePageState extends State<HomePage> {
         child: new ListView(
           children: <Widget>[
 
-// Header of app drawer
+// ------------- Header: User account details -------------
+
             new UserAccountsDrawerHeader(
                 accountName: Text("Username"),
                 accountEmail: Text("User@somemail.com"),
@@ -57,6 +58,13 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+      ),
+
+//==========================================================================================================
+// Body of Home Page - Containing cards, listing all stores
+//==========================================================================================================
+      body: new Container(
+
       ),
 
     );
