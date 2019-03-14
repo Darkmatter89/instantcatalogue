@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
 // Body of Home Page - Containing cards, listing all stores
 //==========================================================================================================
       body: new Container(
-
+        child: new Text("TEST"),
       ),
 
     );
