@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+//==========================================================================================================
+// MAIN MENU SCREEN
+//==========================================================================================================
+
 void main(){
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -32,7 +36,7 @@ class _HomePageState extends State<HomePage> {
       ),
 
 //==========================================================================================================
-// Slide-in Drawer: Containing options and feature of app, account, notifications, settings etc.
+// Slide-in Drawer: Containing options and features of app, account, notifications, settings etc.
 //==========================================================================================================
 
       drawer: new Drawer(
@@ -42,7 +46,14 @@ class _HomePageState extends State<HomePage> {
 // Header of app drawer
             new UserAccountsDrawerHeader(
                 accountName: Text("Username"),
-                accountEmail: Text("User@somemail.com")
+                accountEmail: Text("User@somemail.com"),
+                currentAccountPicture: GestureDetector(
+                  child: new CircleAvatar(
+                    backgroundColor: Colors.grey,
+                    child: Icon(Icons.person, color: Colors.white,),
+                  ),
+                ),
+              decoration: new BoxDecoration(color: Colors.red),
             ),
           ],
         ),
