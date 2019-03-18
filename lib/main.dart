@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:instantcatalogue/components/store_listing.dart';
 
 //==========================================================================================================
+//==========================================================================================================
 // MAIN MENU SCREEN
+//==========================================================================================================
 //==========================================================================================================
 
 void main(){
@@ -43,7 +46,7 @@ class _HomePageState extends State<HomePage> {
         child: new ListView(
           children: <Widget>[
 
-// ------------- Header: User account details -------------
+// ------------- Drawer Header: User account details -------------
 
             new UserAccountsDrawerHeader(
                 accountName: Text("Username"),
@@ -61,11 +64,10 @@ class _HomePageState extends State<HomePage> {
       ),
 
 //==========================================================================================================
-// Body of Home Page - Containing cards, listing all stores
+// Body of Home Page - Containing cards listing all stores
 //==========================================================================================================
-      body: new Container(
-        child: new Text("TEST"),
-      ),
+      body:
+        StoreListing(),
 
     );
   }
