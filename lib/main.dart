@@ -50,17 +50,71 @@ class _HomePageState extends State<HomePage> {
 
             new UserAccountsDrawerHeader(
                 accountName: Text("Username"),
-                accountEmail: Text("User@somemail.com"),
+                accountEmail: Text("user@somemail.com"),
                 currentAccountPicture: GestureDetector(
                   child: new CircleAvatar(
                     backgroundColor: Colors.grey,
                     child: Icon(Icons.person, color: Colors.white,),
                   ),
                 ),
-              decoration: new BoxDecoration(color: Colors.red),
+              decoration: new BoxDecoration(
+                  color: const Color(0xff7c94b6),
+                  image: new DecorationImage(
+                    image: ExactAssetImage('images/appDrawer_image.jpg'),
+                    fit: BoxFit.fill
+
+                )
+              ),
+            ),
+
+
+            Divider(),
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: new Text("Shopping List"),
+                leading: new Icon(Icons.line_style, color: Colors.orange),
+              ),
+            ),
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: new Text("Favourites"),
+                leading: new Icon(Icons.favorite, color: Colors.pink),
+              ),
+            ),
+
+            Divider(),
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: new Text("Alerts"),
+                leading: new Icon(Icons.add_alert, color: Colors.purpleAccent),
+              ),
+            ),
+
+            Divider(),
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: new Text("Settings"),
+                leading: new Icon(Icons.settings, color: Colors.blue),
+              ),
+            ),
+
+            Divider(),
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: new Text("About"),
+                leading: new Icon(Icons.help,color: Colors.green ,),
+              ),
             ),
           ],
+
         ),
+
       ),
 
 

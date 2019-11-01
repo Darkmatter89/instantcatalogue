@@ -50,6 +50,7 @@ flutter:
     - images/checkerslogo.png
     - images/gamelogo.png
     - images/sparlogo.png
+    - images/appDrawer_image.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
