@@ -8,12 +8,45 @@ class StoreListing extends StatefulWidget {
 class _StoreListingState extends State<StoreListing> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Card(
-        child: InkWell(
-          onTap: (){},
-          highlightColor: Colors.blue,
-          child: Image.asset('images/Pnp_logo.png'),
+    return new Container(
+      padding: new EdgeInsets.all(32.0),
+      child: new Center(
+        child: new Column(
+          children: <Widget>[
+            new Card(
+              child: new Container(
+                padding: new EdgeInsets.all(32.0),
+                child: new Column(
+                  children: <Widget>[
+                    new Text('Hello World'),
+                    new Text('How are you?')
+                  ],
+                ),
+              ),
+            ),
+            new Card(
+              child: new Container(
+                padding: new EdgeInsets.all(32.0),
+                child: new Column(
+                  children: <Widget>[
+                    new Text('Hello World'),
+                    new Text('How are you?')
+                  ],
+                ),
+              ),
+            ),
+            new Card(
+              child: new Container(
+                padding: new EdgeInsets.all(32.0),
+                child: new Column(
+                  children: <Widget>[
+                    new Text('Hello World'),
+                    new Text('How are you?'),
+                  ],
+                ),
+              ),
+            )
+          ],
         ),
       ),
     );

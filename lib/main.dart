@@ -24,13 +24,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-//==========================================================================================================
+
 // HEADER - APPBAR
 //==========================================================================================================
-
+      backgroundColor: Colors.white,
       appBar: new AppBar(
         elevation: 0.1,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.lightGreenAccent,
         title: Text("Instant Catalogue",
           style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
         actions: <Widget>[
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
 
-//==========================================================================================================
+
 // Slide-in Drawer: Containing options and features of app, account, notifications, settings etc.
 //==========================================================================================================
 
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
 
-//==========================================================================================================
+
 // Body of Home Page - Containing cards listing all stores
 //==========================================================================================================
       body:
