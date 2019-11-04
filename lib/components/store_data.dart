@@ -10,3 +10,10 @@ class stores {
 
   stores(this.storeImage, this.title, this.startDate, this.endDate, this.budget,);
 }
+
+class storeproducts{
+  final String productName;
+  final double productPrice;
+
+  storeproducts(this.productName, this.productPrice);
+}
