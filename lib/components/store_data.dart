@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-
 class stores {
   final String storeImage;
   final String title;
@@ -11,9 +9,9 @@ class stores {
   stores(this.storeImage, this.title, this.startDate, this.endDate, this.budget,);
 }
 
-class storeproducts{
+class storeproductdetails{
   final String productName;
   final double productPrice;
 
-  storeproducts(this.productName, this.productPrice);
+  storeproductdetails(this.productName, this.productPrice);
 }

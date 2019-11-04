@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'store_data.dart';
+import 'store_product_listing.dart';
+
 
 class StoreListing extends StatelessWidget {
   final List<stores> storesList = [
@@ -41,7 +43,10 @@ class StoreListing extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
 
-                      InkWell(onTap: (){},
+                      InkWell(onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => new storeproducts()));
+
+                      },
                           child: Image.asset(stores.storeImage, fit: BoxFit.fill,),
                       ),
 

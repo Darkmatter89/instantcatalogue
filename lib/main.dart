@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
 
 // HEADER - APPBAR
 //==========================================================================================================
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.blueGrey,
       appBar: new AppBar(
 
         elevation: 0.1,
