@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instantcatalogue/components/store_listing.dart';
 
+
 //==========================================================================================================
 //==========================================================================================================
 // MAIN MENU SCREEN
@@ -27,11 +28,11 @@ class _HomePageState extends State<HomePage> {
 
 // HEADER - APPBAR
 //==========================================================================================================
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white70,
       appBar: new AppBar(
 
         elevation: 0.1,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.blue,
         title: Text("Instant Catalogue",
           style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
         actions: <Widget>[
