@@ -27,6 +27,9 @@ class StoreListing extends StatelessWidget {
   Widget buildStoreListCard(BuildContext context, int index){
     final stores = storesList[index];
     return new Container(
+      height: 150.0,
+      child: Padding(
+        padding: const EdgeInsets.all(3.0),
 
           child: Card(
               child: Padding(
@@ -39,37 +42,38 @@ class StoreListing extends StatelessWidget {
                         child: Image.asset(stores.storeImage),
                       ),
 
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                          child: Row(
-                            children: <Widget>[
-                              Text(stores.title, style: new TextStyle(fontSize: 17.0),),
-                              Spacer(),
-                            ],
-                          ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text("${DateFormat('dd/MM/yyyy').format(stores.startDate).toString()} - ${DateFormat('dd/MM/yyyy').format(stores.endDate).toString()}"),
-                            Spacer(),
-                          ],
-                        ),
-                      ),
+//                      Padding(
+//                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+//                          child: Row(
+//                            children: <Widget>[
+//                              Text(stores.title, style: new TextStyle(fontSize: 17.0),),
+//                              Spacer(),
+//                            ],
+//                          ),
+//                      ),
+//                      Padding(
+//                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+//                        child: Row(
+//                          children: <Widget>[
+//                            Text("${DateFormat('dd/MM/yyyy').format(stores.startDate).toString()} - ${DateFormat('dd/MM/yyyy').format(stores.endDate).toString()}"),
+//                            Spacer(),
+//                          ],
+//                        ),
+//                      ),
 
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(stores.budget.toString(), textAlign: TextAlign.right,),
-                          ],
-                        ),
-                      )
+//                      Padding(
+//                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+//                        child: Row(
+//                          children: <Widget>[
+//                            Text(stores.budget.toString(), textAlign: TextAlign.right,),
+//                          ],
+//                        ),
+//                      )
                     ],
                   ),
               ),
           ),
+      ),
     );
   }
 }
