@@ -27,13 +27,15 @@ class _HomePageState extends State<HomePage> {
 
 // HEADER - APPBAR
 //==========================================================================================================
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey,
       appBar: new AppBar(
+
         elevation: 0.1,
-        backgroundColor: Colors.lightGreenAccent,
+        backgroundColor: Colors.transparent,
         title: Text("Instant Catalogue",
           style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
         actions: <Widget>[
+
           new IconButton(icon: Icon(Icons.assignment),color: Colors.black, onPressed: (){}),
         ],
       ),
@@ -61,9 +63,7 @@ class _HomePageState extends State<HomePage> {
                   color: const Color(0xff7c94b6),
                   image: new DecorationImage(
                     image: ExactAssetImage('images/appDrawer_image.jpg'),
-                    fit: BoxFit.fill
-
-                )
+                    fit: BoxFit.fill)
               ),
             ),
 
@@ -77,6 +77,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
+            Divider(),
             InkWell(
               onTap: (){},
               child: ListTile(

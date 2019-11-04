@@ -1,56 +1,32 @@
 import 'package:flutter/material.dart';
 
-class StoreListing extends StatefulWidget {
-  @override
-  _StoreListingState createState() => _StoreListingState();
-}
+class StoreListing extends StatelessWidget {
+  final List<String> storesList = [
+    "PicknPay", "Game", "Checkers", "Spar"];
 
-class _StoreListingState extends State<StoreListing> {
   @override
   Widget build(BuildContext context) {
-    return new Container(
-      padding: new EdgeInsets.all(32.0),
-      child: new Center(
-        child: new Column(
-          children: <Widget>[
-            new Card(
-              child: new Container(
-                padding: new EdgeInsets.all(32.0),
-                child: new Column(
-                  children: <Widget>[
-                    new Text('Hello World'),
-                    new Text('How are you?')
-                  ],
-                ),
-              ),
-            ),
-            new Card(
-              child: new Container(
-                padding: new EdgeInsets.all(32.0),
-                child: new Column(
-                  children: <Widget>[
-                    new Text('Hello World'),
-                    new Text('How are you?')
-                  ],
-                ),
-              ),
-            ),
-            new Card(
-              child: new Container(
-                padding: new EdgeInsets.all(32.0),
-                child: new Column(
-                  children: <Widget>[
-                    new Text('Hello World'),
-                    new Text('How are you?'),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
+    return Container(
+      child: ListView.builder(
+        itemCount: storesList.length,
+        itemBuilder: (BuildContext context, int index) => buildStoreListCard(context, index)
       ),
     );
   }
+  
+  Widget buildStoreListCard(BuildContext context, int index){
+    return new Container(
+        child: Card(
+            child: Column(
+              children: <Widget>[
+                Text(index.toString()),
+                Text(storesList[index]),
+              ],
+            )
+        )
+    );
+  }
 }
+
 
 
