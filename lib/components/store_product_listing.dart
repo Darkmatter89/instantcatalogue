@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'store_data.dart';
+import 'store_listing.dart';
 
 
 class storeproducts extends StatelessWidget {
@@ -33,7 +34,10 @@ class storeproducts extends StatelessWidget {
                   child: new Column(
                     children: <Widget>[
 
-                      Image.asset("images/storeproducts/jameson.jpg", fit: BoxFit.fill,),
+                      InkWell(
+                        onTap: (){},
+                        child: Image.asset("images/storeproducts/jameson.jpg", fit: BoxFit.fill,),
+                      )
                     ],
                   ),
               ),
