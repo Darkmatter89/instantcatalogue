@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       appBar: new AppBar(
 
-        elevation: 0.1,
+        elevation: 5.0,
         backgroundColor: Colors.blue,
         title: Text("Instant Catalogue",
           style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
