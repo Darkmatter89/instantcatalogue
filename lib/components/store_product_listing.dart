@@ -12,6 +12,23 @@ class storeproducts extends StatelessWidget {
             color: Colors.black,
             fontWeight: FontWeight.bold)),),
 
+      body: GridView.count(crossAxisCount: 2,
+      children: List.generate(30, (index){
+
+        return new Card(
+          elevation: 10.0,
+            child: new Container(
+              child: new Text("$index"),
+            ),
+        );
+
+      })
+      ),
+
+
+
+
+
     );
   }
 }

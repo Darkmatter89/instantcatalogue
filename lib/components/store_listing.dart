@@ -36,10 +36,10 @@ class StoreListing extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(3.0),
 
-          child: Card(color: Colors.white,
+          child: Card(elevation: 10.0,
+            color: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(11.0),
-                side: BorderSide(width: 0.2),
             ),
               child: Padding(
                 padding: const EdgeInsets.all(11.0),
