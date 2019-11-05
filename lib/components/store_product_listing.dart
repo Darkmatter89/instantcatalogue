@@ -6,7 +6,6 @@ import 'store_listing.dart';
 
 class storeproducts extends StatelessWidget {
 
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +34,8 @@ class storeproducts extends StatelessWidget {
                     children: <Widget>[
 
                       InkWell(
-                        onTap: (){},
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => new StoreListing()));},
                         child: Image.asset("images/storeproducts/jameson.jpg", fit: BoxFit.fill,),
                       )
                     ],
