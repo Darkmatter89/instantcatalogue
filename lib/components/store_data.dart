@@ -1,3 +1,7 @@
+//All store related constructors to be placed here.
+
+//Constructor for store details.
+
 class stores {
   final String storeImage;
   final String title;
@@ -8,6 +12,8 @@ class stores {
 
   stores(this.storeImage, this.title, this.startDate, this.endDate, this.budget,);
 }
+
+// Constructor for product details
 
 class storeproductdetails{
   final String productName;

@@ -27,6 +27,8 @@ class StoreListing extends StatelessWidget {
     );
   }
 
+  //Display of cards on main screen - Listing stores on main screen
+
   Widget buildStoreListCard(BuildContext context, int index){
     final stores = storesList[index];
     return new Container(
