@@ -16,8 +16,9 @@ class stores {
 // Constructor for product details
 
 class storeproductdetails{
+  final String productImage;
   final String productName;
   final double productPrice;
 
-  storeproductdetails(this.productName, this.productPrice);
+  storeproductdetails(this.productImage, this.productName, this.productPrice);
 }
